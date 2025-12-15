@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portafolio — Cards</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+
+    <!-- CABECERA -->
+    <header class="header" role="banner">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">C</div>
+        <div>
+          <div class="site-title">Portafolio/Cards/Carlos E. Nolazco Gonzalez</div>
+          <div class="site-sub">Cards</div>
+        </div>
+      </div>
+
+      <nav aria-label="acciones rápidas">
+        <button class="btn contact-btn" id="contact-top">Contacto</button>
+      </nav>
+    </header>
+
+    <!-- MENÚ (sin Blog) -->
+    <nav class="menu" role="navigation" aria-label="menu principal">
+      <a href="#" class="menu-link active" data-target="section-projects">Proyectos</a>
+      <a href="#" class="menu-link" data-target="section-about">Sobre mí</a>
+      <a href="#" class="menu-link" data-target="section-contact">Contacto</a>
+    </nav>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="main" role="main">
+
+      <!-- SECCIÓN: Proyectos (grid 2x2) -->
+      <section id="section-projects" class="section projects" aria-label="lista de proyectos">
+
+        <!-- Proyecto 1 -->
+        <article class="card" id="project-1">
+          <img src="citocafe1.jpg.png" alt="Captura Proyecto 1" class="card-img">
+          <h2 class="card-title">
+            <button class="title-btn" data-modal="modal1">Proyecto Cito Cafe</button>
+          </h2>
+          <p class="card-excerpt">
+            Cito Cafe
+          </p>
+
+          <ul class="tech-list" aria-hidden="true">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ul>
+
+          <div class="card-actions">
+            <button class="btn primary" data-modal="modal1">Ver proyecto</button>
+          </div>
+        </article>
+
+        <!-- Proyecto 2 -->
+        <article class="card" id="project-2">
+          <img src="greñitas.jpg.png" alt="Captura Proyecto 2" class="card-img">
+          <h2 class="card-title">
+            <button class="title-btn" data-modal="modal2">Proyecto Greñitas</button>
+          </h2>
+          <p class="card-excerpt">
+            Greñitas
+          </p>
+
+          <ul class="tech-list" aria-hidden="true">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>React</li>
+          </ul>
+
+          <div class="card-actions">
+            <button class="btn primary" data-modal="modal2">Ver proyecto</button>
+          </div>
+        </article>
+
+        <!-- Proyecto 3 -->
+        <article class="card" id="project-3">
+          <img src="fastpana.jpg.png" alt="Captura Proyecto 3" class="card-img">
+          <h2 class="card-title">
+            <button class="title-btn" data-modal="modal3">Proyecto Fast Pana</button>
+          </h2>
+          <p class="card-excerpt">
+            Fast Pana
+          </p>
+
+          <ul class="tech-list" aria-hidden="true">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ul>
+
+          <div class="card-actions">
+            <button class="btn primary" data-modal="modal3">Ver proyecto</button>
+          </div>
+        </article>
+
+        <!-- Proyecto 4 -->
+        <article class="card" id="project-4">
+          <img src="filoa.jpg.png" alt="Captura Proyecto 4" class="card-img">
+          <h2 class="card-title">
+            <button class="title-btn" data-modal="modal4">Proyecto Filoa</button>
+          </h2>
+          <p class="card-excerpt">
+            Filoa
+          </p>
+
+          <ul class="tech-list" aria-hidden="true">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>React</li>
+          </ul>
+
+          <div class="card-actions">
+            <button class="btn primary" data-modal="modal4">Ver proyecto</button>
+          </div>
+        </article>
+
+      </section>
+
+      <!-- SECCIÓN: Sobre mí -->
+      <section id="section-about" class="section about" aria-label="sobre mi" hidden>
+        <article class="about-card">
+          <h2>Sobre mí</h2>
+          <p id="about-content">
+            Carlos E. Nolazco Gonzalez 22 años 4 hijos 3 esposaas Estudiante de derecho 
+          </p>
+        </article>
+      </section>
+
+      <!-- SECCIÓN: Contacto -->
+      <section id="section-contact" class="section contact" aria-label="contacto" hidden>
+        <article class="contact-card">
+          <h2>Contacto</h2>
+          <p>Enlace a mi GitHub:</p>
+          <p><a id="github-link" class="link" href="https://github.com/chxxrlygg444-ship-it" target="_blank" rel="noopener noreferrer">https://github.com/chxxrlygg444-ship-it</a></p>
+        </article>
+      </section>
+
+    </main>
+
+    <!-- PIE -->
+    <footer class="footer" role="contentinfo">
+      <div>© 2025 Infotec</div>
+      <div class="footer-meta">Hecho con CSS · Flexbox · Grid</div>
+    </footer>
+  </div>
+
+  <!-- Modales (4) -->
+  <div class="modal" id="modal1" aria-hidden="true" role="dialog" aria-labelledby="modal1-title">
+    <div class="modal-content" role="document">
+      <button class="close-x" data-close="modal1" aria-label="Cerrar">✖</button>
+      <h3 id="modal1-title">Proyecto Cito Cafe</h3>
+      <p class="modal-text">
+        
+Durante tres años en Cito Café participé en la operación integral del local, desde la atención al público hasta la gestión logística. Preparaba una amplia variedad de productos: crepas con masas caseras, sándwiches y tortas, pastas, molletes y opciones rápidas como hot dogs; también elaboraba bebidas calientes y frías —cafés especiales, frappés y sodas italianas— y coctelería ligera como micheladas.
+
+Mi trabajo incluía mantener las máquinas en óptimas condiciones mediante limpieza y mantenimiento preventivo, registrar y controlar la mercancía entrante, actualizar la base de datos de inventario y verificar existencias para garantizar el abastecimiento. Al cierre de cada jornada realizaba la limpieza profunda del área y el cierre de caja, asegurando que el local quedara listo para el siguiente día. Gracias a la variedad de clientes y al ritmo constante, desarrollé habilidades en organización, atención al detalle y servicio bajo presión.
+
+Responsabilidades y tareas
+Preparación y presentación de alimentos y bebidas con estándares de calidad.
+
+Elaboración de masas y recetas propias (crepas, repostería).
+
+Atención al cliente y manejo de pedidos en mostrador.
+
+Mantenimiento y limpieza diaria de equipos y áreas de trabajo.
+
+Control de inventario: recepción, registro en sistema y seguimiento de stock.
+
+Gestión de cierres de turno: limpieza final, control de caja y reporte de incidencias.
+
+Coordinación con proveedores y verificación de entregas.
+      </p>
+      <div class="modal-actions">
+        <a class="btn" href="#">Ver demo</a>
+        <a class="btn secondary" href="#">Ver código</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal2" aria-hidden="true" role="dialog" aria-labelledby="modal2-title">
+    <div class="modal-content" role="document">
+      <button class="close-x" data-close="modal2" aria-label="Cerrar">✖</button>
+      <h3 id="modal2-title">Proyecto Greñitas</h3>
+      <p class="modal-text">
+        
+Trabajé en Greñitas atendiendo a clientes en mostrador y por teléfono, coordinando citas y gestionando la agenda diaria. Además de las tareas administrativas, participé en acciones de comunicación y apoyo a campañas locales. Mantuve el orden del espacio, supervisé suministros y colaboré en la organización de actividades infantiles y eventos pequeños. La experiencia fortaleció mi capacidad para trabajar con público sensible, priorizar la seguridad y ofrecer un trato empático y profesional.
+
+Responsabilidades y tareas
+Atención al cliente presencial y telefónica con trato cordial y resolución de dudas.
+
+Administración de agenda y coordinación de citas, confirmaciones y reprogramaciones.
+
+Manejo de punto de venta y cobros, emisión de recibos y cierre de caja.
+
+Tareas administrativas: registro de clientes, actualización de expedientes y control de pagos.
+
+Apoyo en marketing digital: publicación de promociones en redes sociales y gestión básica de mensajes.
+
+Organización de actividades infantiles y logística de materiales para talleres.
+
+Mantenimiento del espacio: limpieza ligera, control de insumos y coordinación con proveedores.
+
+Gestión de incidencias: atención a reclamaciones, coordinación de soluciones y seguimiento.
+
+Cumplimiento de normas de higiene y seguridad específicas para atención infantil.
+      </p>
+      <div class="modal-actions">
+        <a class="btn" href="#">Ver demo</a>
+        <a class="btn secondary" href="#">Ver código</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal3" aria-hidden="true" role="dialog" aria-labelledby="modal3-title">
+    <div class="modal-content" role="document">
+      <button class="close-x" data-close="modal3" aria-label="Cerrar">✖</button>
+      <h3 id="modal3-title">Proyecto Fast Pana</h3>
+      <p class="modal-text">Mi labor en Fast Pana incluyó la preparación de platillos básicos, corte de frutas y verduras, frituras y limpieza de utensilios. Además de apoyar en cocina, realicé entregas en moto, empaquetado de pedidos y control básico de insumos. Aprendí a adaptarme a distintas áreas del negocio según la demanda diaria y a mantener estándares de seguridad alimentaria y eficiencia en el servicio.
+
+Responsabilidades y tareas
+Preparación de alimentos: montaje de platos, frituras y guarniciones.
+
+Corte y procesamiento de frutas y verduras con técnicas seguras.
+
+Limpieza y sanitización de utensilios, superficies y áreas de trabajo.
+
+Repartidor en moto: entrega puntual y manejo seguro de rutas.
+
+Empaque y etiquetado de pedidos para entrega y consumo en local.
+
+Apoyo en recepción de mercancía y almacenamiento según rotación.
+
+Adaptación a distintas funciones según necesidades del turno.
+
+Cumplimiento de normas de higiene y manipulación segura de alimentos.</p>
+      <div class="modal-actions">
+        <a class="btn" href="#">Ver demo</a>
+        <a class="btn secondary" href="#">Ver código</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal4" aria-hidden="true" role="dialog" aria-labelledby="modal4-title">
+    <div class="modal-content" role="document">
+      <button class="close-x" data-close="modal4" aria-label="Cerrar">✖</button>
+      <h3 id="modal4-title">Proyecto Filoa</h3>
+      <p class="modal-text">En Filoa participé en la preparación de menús para servicio diario y eventos, elaboración de aguas frescas, jugos y ensaladas, así como en el lavado de loza y corte de verduras. Formé parte del equipo de montaje para eventos, colaborando en la logística de transporte, montaje de estaciones de comida y atención durante el servicio. La experiencia me permitió desarrollar habilidades en producción en volumen, control de calidad y coordinación en eventos.
+
+Responsabilidades y tareas
+Preparación de alimentos para servicio y eventos, incluyendo ensaladas y guarniciones.
+
+Elaboración de bebidas: aguas frescas, jugos naturales y bebidas no alcohólicas.
+
+Corte y preparación de verduras y frutas con técnicas de eficiencia.
+
+Lavado y sanitización de loza, utensilios y equipos de cocina.
+
+Apoyo en eventos: montaje de estaciones, transporte de alimentos y atención en sitio.
+
+Empaque y etiquetado para servicio a domicilio y catering.
+
+Control de insumos y apoyo en recepción de mercancía.
+
+Colaboración en logística para garantizar tiempos y calidad en eventos.</p>
+      <div class="modal-actions">
+        <a class="btn" href="#">Ver demo</a>
+        <a class="btn secondary" href="#">Ver código</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Navegación entre secciones
+    const menuLinks = document.querySelectorAll('.menu-link');
+    const sections = document.querySelectorAll('.section');
+
+    function showSection(id) {
+      sections.forEach(s => {
+        s.hidden = s.id !== id;
+      });
+      menuLinks.forEach(link => {
+        link.classList.toggle('active', link.getAttribute('data-target') === id);
+      });
+      // asegurar scroll top del main
+      document.querySelector('.main').scrollTop = 0;
+    }
+
+    menuLinks.forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const target = link.getAttribute('data-target');
+        showSection(target);
+      });
+    });
+
+    // Top contact button abre contacto
+    document.getElementById('contact-top').addEventListener('click', () => {
+      showSection('section-contact');
+    });
+
+    // Abrir modales
+    document.querySelectorAll('[data-modal]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const id = btn.getAttribute('data-modal');
+        const modal = document.getElementById(id);
+        if (!modal) return;
+        modal.classList.add('show');
+        modal.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+        const focusable = modal.querySelector('button, a, [tabindex]:not([tabindex="-1"])');
+        if (focusable) focusable.focus();
+      });
+    });
+
+    // Cerrar modales por botón
+    document.querySelectorAll('[data-close]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const id = btn.getAttribute('data-close');
+        const modal = document.getElementById(id);
+        if (!modal) return;
+        modal.classList.remove('show');
+        modal.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+      });
+    });
+
+    // Cerrar al hacer click fuera del contenido
+    document.querySelectorAll('.modal').forEach(modal => {
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+          modal.classList.remove('show');
+          modal.setAttribute('aria-hidden', 'true');
+          document.body.style.overflow = '';
+        }
+      });
+    });
+
+    // Cerrar con Escape
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        document.querySelectorAll('.modal.show').forEach(m => {
+          m.classList.remove('show');
+          m.setAttribute('aria-hidden', 'true');
+          document.body.style.overflow = '';
+        });
+      }
+    });
+
+    // Inicial: mostrar proyectos
+    showSection('section-projects');
+  </script>
+</body>
+</html>
+
